@@ -48,7 +48,7 @@ section {
 }
 section.imagem > p {
     background-color: var(--cor_imagem);
-    width: 35vw;
+    width: 45vw;
     padding: 10px;
     color: white;
 }
