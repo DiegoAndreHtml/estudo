@@ -52,11 +52,13 @@ section.imagem > p {
     padding: 10px;
     color: white;
 }
+section.imagem {
+    box-shadow: inset 5px 5px 8px rgba(0, 0, 0, 0.376);
+}
 section#img01 {
     background-image: url(imagens/background001.jpg);
-    background-size: cover;
     background-position: right center;
-    background-attachment: fixed;
+    background-size: cover;    background-attachment: fixed;
 }
 section#img02 {
     background-image: url(imagens/background002.jpg);
