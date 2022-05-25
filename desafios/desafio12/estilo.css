@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: Principal;
+    src: url(fontes/IndieFlower-Regular.ttf);
+}
+
+:root {
+    --principal: Principal, sans-serif;
+    --cor_imagem: #000000b0;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: var(--principal);
+}
+header > h1 {
+    font-size: 8vw;
+    padding-top: 50px;
+}
+header > p > a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition-duration: 1s;
+}
+header > p > a:hover {
+    background-color: white;
+    color: black;
+    padding: 2px;
+    border-radius: 5px;
+    transition-duration: 1s;
+}
+header > p {
+    font-size: 1.2em;
+    padding-bottom: 50px;
+}
+section {
+    font-family: var(--principal);
+    font-size: 3vw;
+    padding: 2vw;
+}
+section.imagem > p {
+    background-color: var(--cor_imagem);
+    width: 35vw;
+    padding: 10px;
+    color: white;
+}
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-size: cover;
+    background-position: right center;
+    background-attachment: fixed;
+}
+section#img02 {
+    background-image: url(imagens/background002.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+footer {
+    background-color: black;
+    color: white;
+}
+footer > p {
+    padding: 5px;
+    text-align: center;
+}
+footer > p > a {
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    transition-duration: 1s;
+}
+footer > p > a:hover {
+    background-color: white;
+    color: black;
+    padding: 2px;
+    border-radius: 5px;
+    transition-duration: 1s;
+}
