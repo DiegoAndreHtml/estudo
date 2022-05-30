@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <style>
+        table {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 2.5vw;
+            width: 50vw;
+            height: 20vw;
+            text-align: center;
+            border-collapse: collapse;
+        }
+        #f {
+            background-color: hsl(350, 100%, 75%);
+        }
+        #m {
+            background-color: hsl(203, 100%, 75%);
+        }
+        #n_m {
+            background-color: hsl(195, 60%, 52%);
+        }
+        #n_f {
+            background-color: hsl(350, 60%, 52%);
+        }
+        tr, td, th {
+            border: 1px solid black;
+            background-color: rgb(75, 220, 159);
+        }
+        th {
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <th scope="col">Grupo</th>
+            <th scope="col">Nomes</th>
+            <th scope="col" colspan="3">Filmes</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" rowspan="4" id="f">Mulheres</th>
+                <tr>
+                    <td id="n_f">Ana Maria Santos</td>
+                    <td>Alien</td>
+                    <td>Rambo</td>
+                    <td>Vingadores</td>
+                </tr>
+                <tr>
+                    <td id="n_f">Beatriz Sousa</td>
+                    <td>Hulk</td>
+                    <td>Inception</td>
+                    <td>Batman</td>
+                </tr>
+                <tr>
+                    <td id="n_f">Cláudia Melo</td>
+                    <td>Obvilion</td>
+                    <td>Matrix</td>
+                    <td>Big Hero</td>
+                </tr>
+            </tr>
+            <tr>
+                <th scope="row" rowspan="4" id="m">Homens</th>
+                <tr>
+                    <td id="n_m">Bruno Mendonça</td>
+                    <td>Intocáveis</td>
+                    <td>Amnésia</td>
+                    <td>Gladiador</td>
+                </tr>
+                <tr>
+                    <td id="n_m">Daniel Lourenzo</td>
+                    <td>Wall-E</td>
+                    <td>Oldboy</td>
+                    <td>Dangal</td>
+                </tr>
+                <tr>
+                    <td id="n_m">Fabiano Mota</td>
+                    <td>Star Wars</td>
+                    <td>Taxi Driver</td>
+                    <td>Toy Store</td>
+                </tr>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
