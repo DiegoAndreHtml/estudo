@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        :root {
+            --cor_luz: #67eaaf;
+            --cor_sombra: #1d6b53;
+        }
+        iframe {
+            position: absolute;
+
+            border-top: 1px solid var(--cor_luz);
+            border-left: 1px solid var(--cor_luz);
+            border-bottom: 1px solid var(--cor_sombra);
+            border-right: 1px solid var(--cor_sombra);
+
+            width: 99vw;
+            height: 80vh;
+
+            left: 50%;
+
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="extras/pag1.html" target="iframe_principal">Página 1</a></li>
+        <li><a href="extras/pag2.html" target="iframe_principal">Página 2</a></li>
+        <li><a href="extras/pag3.html" target="iframe_principal">Página 3</a></li>
+    </ul>
+    <iframe srcdoc="<h1>Escolha uma das opções acima</h1>" frameborder="0" name="iframe_principal">
+        
+    </iframe>
+</body>
+</html>

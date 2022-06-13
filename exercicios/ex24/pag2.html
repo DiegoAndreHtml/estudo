@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        body {
+            background-image: linear-gradient(90deg, #f4c63c, #ffbf00);
+            background-size: 300% 100%;
+            height: 46.9vw;
+            animation: back 1s infinite ease-in-out;
+        }
+        @keyframes back {
+            0% {
+                background-position: 100%;
+            }
+            50% {
+                background-position: 0px;
+            }
+            100% {
+                background-position: 100%;
+            }
+        }
+        h1 {
+            animation: text 1s infinite ease-in-out;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #5b71df;
+            font-size: 3em;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: #0a25ac;
+            text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.352);
+            position: absolute;
+            top: 43%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        @keyframes text {
+            0% {
+                font-size: 3em;
+            }
+            50% {
+                font-size: 4em;
+            }
+            100% {
+                font-size: 3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá!</h1>
+</body>
+</html>
