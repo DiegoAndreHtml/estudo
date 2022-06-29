@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+    <style>
+        body {
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            background-color: rgb(108, 212, 247);
+
+            height: 89vh;
+        }
+        h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 5vw;
+            color: rgb(120, 255, 120);
+            text-shadow: 0.4vw 0.4vw rgba(0, 0, 0, 0.229);
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Clique em mim!</h1>
+    <script>
+        var t = document.getElementById("titulo")
+        t.addEventListener("click", function clique () {
+            t.innerHTML = "Valeu"
+        })
+    </script>
+</body>
+</html>
