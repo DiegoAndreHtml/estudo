@@ -55,7 +55,31 @@ section#redes-sociais {
     text-align: right;
 }
 section#redes-sociais img {
-    width: 50px;
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.187);
+
     border-radius: 50%;
+
     margin: 10px;
+
+    width: 50px;
+
+    transition-duration: 0.4s;
+}
+section#redes-sociais img:hover {
+    animation: crescer 1s infinite;
+
+    margin: 25px;
+    
+    transition-duration: 0.4s;
+}
+@keyframes crescer {
+    0% {
+        transform: rotate(90deg);
+    }
+    10% {
+        transform: rotate(180deg);
+    }
+    50% {
+    transform: scale(1.5);
+    }  
 }

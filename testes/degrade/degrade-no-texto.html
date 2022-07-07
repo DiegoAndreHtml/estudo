@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            font-size: 7vw;
+        }
+
+        h1#uma_cor {
+            color: slateblue;
+        }
+
+        h1#degrade {
+            /*Definindo o degrade*/
+            background-image: linear-gradient(180deg, red, yellow);
+
+            /*Apagar as coisas que tiver atrás do texto*/
+            background-clip: text;
+            -webkit-background-clip: text;
+
+            /*Deixar o texto transparente*/
+            -webkit-text-fill-color: transparent;
+
+            /*caso o navegador na aceita degrade*/
+            color: black;
+        }
+        
+        h1#duas_cores {
+            /*Definindo as cores*/
+            background-image: linear-gradient(180deg, rgb(0, 255, 238) 60%, rgb(0, 64, 255) 40%);
+
+            /*Apagando coisas atrás do texto*/
+            background-clip: text;
+            -webkit-background-clip: text;
+
+            /*Deixando ele invisível*/
+            color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="uma_cor">Texto com uma cor</h1>
+    <h1 id="degrade">Texto com degrade</h1>
+    <h1 id="duas_cores">Texto com duas cores</h1>
+</body>
+</html>
