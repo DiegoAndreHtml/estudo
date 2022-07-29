@@ -1,0 +1,12 @@
+body {
+    height: 97vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: gray;
+    background-color: #0000ff;
+}
+div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
